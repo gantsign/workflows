@@ -17,7 +17,7 @@ on:
 jobs:
   release:
     name: Release
-    uses: gantsign:workflows/.github/workflows/ansible-galaxy-import.yml@v1
+    uses: gantsign/workflows/.github/workflows/ansible-galaxy-import.yml@v1
     secrets: inherit
 ```
 

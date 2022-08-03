@@ -5,7 +5,7 @@ on:
       github-repository:
         type: string
         description: The owner and repository name. For example gantsign/ansible-role-java.
-        required: true
+        required: false
         default: '${{ github.repository }}'
 env:
   ANSIBLE_FORCE_COLOR: '1'
