@@ -36,6 +36,7 @@ jobs:
               -P publish-artifacts,sign-artifacts,ossrh-deploy \
               -Dmaven.install.skip=true \
               -DskipTests \
+              -Dinvoker.skip=true \
               "-Drevision=${GIT_TAG:-development-SNAPSHOT}" \
               --batch-mode \
               --show-version \
