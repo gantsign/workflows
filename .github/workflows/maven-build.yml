@@ -28,6 +28,7 @@ jobs:
         run: |
           ./mvnw package \
               "-Drevision=${GIT_TAG:-development-SNAPSHOT}" \
+              -Dinvoker.streamLogs=true \
               --batch-mode \
               --show-version \
               -Dstyle.color=always
