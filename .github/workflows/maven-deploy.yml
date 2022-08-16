@@ -6,6 +6,8 @@ on:
         type: string
         description: The Java version to use for the build.
         required: true
+permissions:
+  contents: read
 env:
   JAVA_TOOL_OPTIONS: >-
     -XX:TieredStopAtLevel=1
