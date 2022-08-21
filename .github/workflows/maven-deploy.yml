@@ -34,6 +34,7 @@ jobs:
           key-suffix: '-deploy'
       - name: Deploy with Maven
         run: |
+          [ "$GITHUB_REF_TYPE" = 'tag' ] && GIT_TAG="$GITHUB_REF_NAME"
           ./mvnw deploy \
               -P publish-artifacts,sign-artifacts,ossrh-deploy \
               -Dmaven.install.skip=true \
