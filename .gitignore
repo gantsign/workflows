@@ -343,3 +343,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Devpod
+.devpod-internal
